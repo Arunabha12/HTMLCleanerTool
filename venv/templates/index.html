@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+   <head>
+      <title>HTML CLEANER</title>
+   </head>
+    <style>
+        .header{
+        color:#fff;
+        background-color:#000;
+        left: 0;
+        top: 0;
+        position: fixed;
+        width:100%;
+        }
+        .buttondiv{
+        display:flex;
+        flex-flow: row;
+        justify-content: space-around;
+        }
+        .button{
+        border-radius: 8px;
+        color: #333;
+        display: block;
+        border: 1px solid #333;
+        font-size: 12px;
+        text-align: center;
+        background-color:white;
+        width: 150px;
+        padding: 4px;
+        }
+        .button:hover{
+        color:#fff;
+        background-color:#222;
+        }
+    </style>
+   <body style="text-align:center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+   <div class="header" ><h1>HTML CLEANER</h1></div>
+
+      <form style="margin-top:128px;" action = "" method = POST>
+            <h5>Paste the HTML document here...</h5>
+            <textarea rows="25" cols="120" name = html value = "{{request.form.html }}"></textarea>
+            <div class="buttondiv">
+                <p><input class="button" type = submit name = "Submit_button" value = "Text_Converter"></p>
+                <p><input class="button" type = submit name = "Submit_button" value = "Clean_HTML"></p>
+            </div>
+      </form>
+        <p style="font-size:12px;float:right;margin:16px; bottom:0;" >- By Sourav Dey</p>
+   </body>
+</html>
